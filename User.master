@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="User" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="header">
+    <div style="font-family:Times New Roman; font-size:35px; text-align:center;height:150px;line-height:60px;  font-weight:bold; color:Black;" >
+      
+    </div>
+  </div>
+  <div id="menu">
+       <ul>
+        <li  class="active"><a href="BOOK.aspx">PATIENT DOCUMENTS</a></li> 
+           <%--<li  class="active"><a href="BOOK.aspx">BOOK NOW</a></li> 
+           <li><a href="CancelAPP.aspx">CANCEL APPOINTMENT</a></li>--%> 
+           <li><a href="Abstract.aspx">SIGN OUT</a></li> 
+           <%--<li><a href="UserLogin.aspx">SIGN OUT</a></li> 
+          --%>
+           
+       </ul>
+   </div>
+<div style="width:900px;height:700px;float:left; background-color:White;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</div>
+   
+
+    <div  id="footer">
+    <p>Copyright &copy; </p>
+    <p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  </div>
+ 
+    </form>
+</body>
+</html>
+
